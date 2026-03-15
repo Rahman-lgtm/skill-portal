@@ -19,54 +19,70 @@ background:#28a745;
 color:white;
 text-align:center;
 padding:20px;
+
 position:fixed;
 top:0;
 left:220px;
 right:0;
+
+height:80px;
 z-index:1000;
-}
-
-/* LAYOUT */
-
-.container{
-display:flex;
-margin-top:100px;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-width:210px;
+width:220px;
 background:#2f3f4f;
-height:100%;
-padding:15px;
+
 position:fixed;
-top:80px;
+top:0;
+left:0;
+
+height:100vh;
+padding-top:100px;
 }
+
+/* SIDEBAR LINKS */
 
 .sidebar a{
 display:block;
 color:white;
 text-decoration:none;
 padding:10px;
-margin:6px 0;
+margin:6px 15px;
 background:#3d5063;
 border-radius:6px;
-}
-
-.sidebar a.active{
-background:#1abc9c;
+transition:0.3s;
 }
 
 .sidebar a:hover{
 background:#1abc9c;
 }
 
+.sidebar a.active{
+background:#1abc9c;
+}
+
+/* DASHBOARD BUTTON */
+
+.dashboard-btn{
+background:#ff9800 !important;
+font-weight:bold;
+text-align:center;
+margin-bottom:20px;
+}
+
+.dashboard-btn:hover{
+background:#e68900 !important;
+}
+
 /* CONTENT */
 
 .content{
-margin-left:260px;
-padding:25px;
+margin-left:240px;
+padding:30px;
+margin-top:110px;
 }
 
 /* LESSON CARD */
@@ -98,6 +114,8 @@ height:150px;
 margin-top:10px;
 font-family:monospace;
 padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
 iframe{
@@ -105,6 +123,8 @@ width:100%;
 height:150px;
 border:1px solid #ccc;
 margin-top:10px;
+background:white;
+border-radius:6px;
 }
 
 /* BUTTONS */
@@ -120,6 +140,8 @@ background:#28a745;
 color:white;
 border-radius:6px;
 cursor:pointer;
+margin-right:10px;
+font-size:15px;
 }
 
 button:hover{
@@ -133,13 +155,14 @@ background:#ddd;
 height:10px;
 border-radius:6px;
 margin-bottom:20px;
+overflow:hidden;
 }
 
 .progress-bar{
 background:#28a745;
 height:10px;
-width:10%;
-border-radius:6px;
+width:0%;
+transition:0.4s;
 }
 
 </style>
@@ -155,17 +178,15 @@ border-radius:6px;
 
 </header>
 
-<div class="container">
-
 <!-- SIDEBAR -->
 
 <div class="sidebar">
 
+<a href="dashboard.html" class="dashboard-btn">🏠 Dashboard</a>
+
 <a href="#l1" class="active">Lesson 1</a>
 <a href="#l2">Lesson 2</a>
 <a href="#l3">Lesson 3</a>
-<a href="#l4">Lesson 4</a>
-<a href="#l5">Lesson 5</a>
 
 </div>
 
@@ -214,7 +235,7 @@ Hello World<br>
 
 </div>
 
-<!-- LESSON 3 LIVE EDITOR -->
+<!-- LESSON 3 -->
 
 <div class="lesson" id="l3">
 
@@ -229,21 +250,18 @@ Hello World<br>
 
 </textarea>
 
-<button onclick="runCode()">Run Code</button>
+<br><br>
+
+<button onclick="runCode()">▶ Run Code</button>
 
 <iframe id="output"></iframe>
 
 </div>
 
-<!-- NEXT / PREVIOUS -->
-
 <div class="nav-buttons">
 
 <button onclick="prevLesson()">⬅ Previous</button>
-
 <button onclick="nextLesson()">Next ➡</button>
-
-</div>
 
 </div>
 
@@ -255,54 +273,82 @@ Hello World<br>
 
 function runCode(){
 
-let code = document.getElementById("editor").value;
+let code=document.getElementById("editor").value;
 
-document.getElementById("output").srcdoc = code;
+document.getElementById("output").srcdoc=code;
 
 }
 
 /* LESSON NAVIGATION */
 
-let lessons = ["l1","l2","l3"];
-let current = 0;
-
-function nextLesson(){
-
-if(current < lessons.length-1){
-
-current++;
-
-location.hash = lessons[current];
-
-updateProgress();
-
-}
-
-}
-
-function prevLesson(){
-
-if(current > 0){
-
-current--;
-
-location.hash = lessons[current];
-
-updateProgress();
-
-}
-
-}
+let lessons=["l1","l2","l3"];
+let current=0;
 
 /* PROGRESS BAR */
 
 function updateProgress(){
 
-let percent = ((current+1)/lessons.length)*100;
+let percent=((current+1)/lessons.length)*100;
 
-document.getElementById("progress").style.width = percent + "%";
+document.getElementById("progress").style.width=percent+"%";
+
+updateActive();
 
 }
+
+/* ACTIVE SIDEBAR */
+
+function updateActive(){
+
+let links=document.querySelectorAll(".sidebar a");
+
+links.forEach((link,i)=>{
+
+link.classList.remove("active");
+
+if(i===current+1){   // because dashboard is first link
+
+link.classList.add("active");
+
+}
+
+});
+
+}
+
+/* NEXT LESSON */
+
+function nextLesson(){
+
+if(current<lessons.length-1){
+
+current++;
+
+location.hash=lessons[current];
+
+updateProgress();
+
+}
+
+}
+
+/* PREVIOUS LESSON */
+
+function prevLesson(){
+
+if(current>0){
+
+current--;
+
+location.hash=lessons[current];
+
+updateProgress();
+
+}
+
+}
+
+updateProgress();
 
 </script>
 
