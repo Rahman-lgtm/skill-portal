@@ -244,6 +244,7 @@ font-size:16px;
 margin-right:10px;
 cursor:pointer;
 box-shadow:2px 2px 6px gray;
+transition:0.3s;
 }
 
 .signup-btn{
@@ -255,8 +256,22 @@ border-radius:10px;
 font-size:16px;
 cursor:pointer;
 box-shadow:2px 2px 6px gray;
+transition:0.3s;
 }
 
+/* Hover Effect */
+
+.login-btn:hover{
+background:#088a42;
+transform:scale(1.05);
+box-shadow:4px 4px 12px gray;
+}
+
+.signup-btn:hover{
+background:#d89200;
+transform:scale(1.05);
+box-shadow:4px 4px 12px gray;
+}
 /* Dashboard */
 
 .dashboard-cards{
