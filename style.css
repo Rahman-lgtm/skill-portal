@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:Bookman old style;
+font-family:'Hind Siliguri', sans-serif;
 background:#d9d9d9;
 }
 
@@ -22,6 +22,8 @@ z-index:1000;
 header h1{
 color:#1a9c3a;
 margin:5px;
+font-weight:600;
+letter-spacing:1px;
 }
 
 header span{
