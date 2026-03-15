@@ -123,3 +123,26 @@ padding:10px;
 text-align:center;
 font-size:14px;
 }
+.course-header{
+background:#e9dcb8;
+border:2px solid green;
+text-align:center;
+padding:15px;
+margin:10px;
+border-radius:8px;
+}
+
+.course-intro{
+padding:15px;
+}
+
+.course-intro h3{
+margin-top:10px;
+}
+
+.career{
+text-align:center;
+margin-top:25px;
+font-size:18px;
+font-weight:bold;
+}
