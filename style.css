@@ -1,20 +1,22 @@
 body{
+margin:0;
 font-family:'Hind Siliguri', sans-serif;
 background:#d9d9d9;
 }
+
+/* Header Font */
 
 header h1{
 font-family:'Noto Serif Bengali', serif;
 }
 
-/* Header (Fixed Top) */
+/* Header */
 
 header{
 text-align:center;
 padding:10px;
 border-bottom:2px solid black;
 background:#f2f2f2;
-
 position:fixed;
 top:0;
 left:200px;
@@ -38,6 +40,7 @@ font-weight:bold;
 
 .container{
 display:flex;
+min-height:100vh;
 }
 
 /* Sidebar */
@@ -52,7 +55,7 @@ left:0;
 top:0;
 }
 
-/* Sidebar buttons */
+/* Sidebar Links */
 
 .sidebar a{
 display:block;
@@ -67,30 +70,31 @@ box-shadow:2px 2px 5px gray;
 transition:0.3s;
 }
 
-/* Hover effect */
+/* Hover */
 
 .sidebar a:hover{
 background:#ffd966;
 transform:scale(1.05);
 }
 
-/* Active tab */
+/* Active */
 
 .sidebar a.active{
 background:#f5d36c;
 color:#000;
 }
 
-/* Main Content */
+/* Content */
 
 .content{
 margin-left:220px;
 padding:20px;
-margin-top:90px;
+margin-top:100px;
+padding-bottom:80px;
 flex:1;
 }
 
-/* Top box */
+/* Top Box */
 
 .topbox{
 background:#e6cbb4;
@@ -101,7 +105,7 @@ font-size:20px;
 margin-bottom:20px;
 }
 
-/* Course boxes */
+/* Course Boxes */
 
 .course-box{
 display:flex;
@@ -113,7 +117,7 @@ justify-content:center;
 
 .course{
 background:#efe2bf;
-padding:5px;
+padding:15px;
 border-radius:10px;
 box-shadow:2px 2px 5px gray;
 font-weight:bold;
@@ -121,7 +125,7 @@ width:260px;
 text-align:left;
 }
 
-/* Why box */
+/* Why Section */
 
 .why{
 background:#08a64a;
@@ -144,7 +148,7 @@ margin:8px;
 .journey{
 margin-top:20px;
 background:#e5e5e5;
-padding:10px;
+padding:12px;
 text-align:center;
 font-size:18px;
 box-shadow:2px 2px 5px gray;
@@ -158,13 +162,13 @@ bottom:0;
 left:200px;
 right:0;
 border-top:2px solid black;
-padding:8px;
+padding:10px;
 text-align:center;
 font-size:14px;
 background:#f2f2f2;
 }
 
-/* Courses page */
+/* Courses Page */
 
 .course-header{
 background:#e9dcb8;
@@ -172,7 +176,7 @@ border:2px solid green;
 text-align:center;
 padding:15px;
 margin-left:220px;
-margin-top:100px;
+margin-top:110px;
 border-radius:8px;
 }
 
@@ -190,18 +194,17 @@ text-align:center;
 margin-top:25px;
 font-size:18px;
 font-weight:bold;
-
 }
 
-/* Login page */
+/* Login Page */
 
 .login-box{
 background:#f0f0f0;
-width:500px;
+width:420px;
 margin:auto;
 padding:25px;
 box-shadow:3px 3px 10px gray;
-border-radius:5px;
+border-radius:8px;
 }
 
 .login-box h2{
@@ -213,26 +216,30 @@ padding-bottom:10px;
 
 .login-box label{
 display:block;
-margin-top:30px;
+margin-top:20px;
 font-weight:bold;
 }
 
 .login-box input{
 width:100%;
 padding:10px;
-margin-top:10px;
+margin-top:8px;
 border:1px solid orange;
 border-radius:4px;
-box-shadow:3px 3px 10px gray;
+box-shadow:2px 2px 6px #bbb;
 box-sizing:border-box;
 }
 
+/* Login Options */
+
 .login-options{
 display:flex;
-justify-content:space-between;
-margin-top:10px;
+justify-content:flex-end;
+margin-top:8px;
 font-size:14px;
 }
+
+/* Buttons */
 
 .login-buttons{
 text-align:center;
@@ -264,7 +271,7 @@ box-shadow:2px 2px 6px gray;
 transition:0.3s;
 }
 
-/* Hover Effect */
+/* Hover */
 
 .login-btn:hover{
 background:#088a42;
@@ -277,6 +284,7 @@ background:#d89200;
 transform:scale(1.05);
 box-shadow:4px 4px 12px gray;
 }
+
 /* Dashboard */
 
 .dashboard-cards{
