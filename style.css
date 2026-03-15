@@ -29,13 +29,6 @@ display:flex;
 
 /* Sidebar */
 
-.sidebar{
-width:200px;
-background:#9db1cc;
-padding-top:20px;
-height:80vh;
-}
-
 .sidebar a{
 display:block;
 margin:15px;
@@ -46,10 +39,21 @@ text-decoration:none;
 font-weight:bold;
 color:#0b4ba8;
 box-shadow:2px 2px 5px gray;
+transition:0.3s;
 }
 
-.sidebar .active{
+/* Hover effect */
+
+.sidebar a:hover{
+background:#ffd966;
+transform:scale(1.05);
+}
+
+/* Active tab */
+
+.sidebar a.active{
 background:#f5d36c;
+color:#000;
 }
 
 /* Content */
