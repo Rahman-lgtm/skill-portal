@@ -1,357 +1,276 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<title>Kids HTML Coding School</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#eef2f7;
-}
-
-/* HEADER */
-
-header{
-background:#28a745;
-color:white;
-text-align:center;
-padding:20px;
-
-position:fixed;
-top:0;
-left:220px;
-right:0;
-
-height:80px;
-z-index:1000;
-}
-
-/* SIDEBAR */
-
-.sidebar{
-width:220px;
-background:#2f3f4f;
-
-position:fixed;
-top:0;
-left:0;
-
-height:100vh;
-padding-top:100px;
-}
-
-/* SIDEBAR LINKS */
-
-.sidebar a{
-display:block;
-color:white;
-text-decoration:none;
-padding:10px;
-margin:6px 15px;
-background:#3d5063;
-border-radius:6px;
-transition:0.3s;
-}
-
-.sidebar a:hover{
-background:#1abc9c;
-}
-
-.sidebar a.active{
-background:#1abc9c;
-}
-
-/* DASHBOARD BUTTON */
-
-.dashboard-btn{
-background:#ff9800 !important;
-font-weight:bold;
-text-align:center;
-margin-bottom:20px;
-}
-
-.dashboard-btn:hover{
-background:#e68900 !important;
-}
-
-/* CONTENT */
-
-.content{
-margin-left:240px;
-padding:30px;
-margin-top:110px;
-}
-
-/* LESSON CARD */
-
-.lesson{
-background:white;
-padding:20px;
-border-radius:10px;
-margin-bottom:25px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* CODE BOX */
-
-.code{
-background:#1e1e1e;
-color:#00ff90;
-padding:15px;
-border-radius:6px;
-font-family:monospace;
-margin-top:10px;
-}
-
-/* EDITOR */
-
-textarea{
-width:100%;
-height:150px;
-margin-top:10px;
-font-family:monospace;
-padding:10px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-iframe{
-width:100%;
-height:150px;
-border:1px solid #ccc;
-margin-top:10px;
-background:white;
-border-radius:6px;
-}
-
-/* BUTTONS */
-
-.nav-buttons{
-margin-top:20px;
-}
-
-button{
-padding:10px 18px;
-border:none;
-background:#28a745;
-color:white;
-border-radius:6px;
-cursor:pointer;
-margin-right:10px;
-font-size:15px;
-}
-
-button:hover{
-background:#1e7e34;
-}
-
-/* PROGRESS BAR */
-
-.progress{
-background:#ddd;
-height:10px;
-border-radius:6px;
-margin-bottom:20px;
-overflow:hidden;
-}
-
-.progress-bar{
-background:#28a745;
-height:10px;
-width:0%;
-transition:0.4s;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>🚀 Kids HTML Coding School</h1>
-<p>Learn HTML from Basic to Advanced</p>
-
-</header>
-
-<!-- SIDEBAR -->
-
-<div class="sidebar">
-
-<a href="dashboard.html" class="dashboard-btn">🏠 Dashboard</a>
-
-<a href="#l1" class="active">Lesson 1</a>
-<a href="#l2">Lesson 2</a>
-<a href="#l3">Lesson 3</a>
-
-</div>
-
-<!-- CONTENT -->
-
-<div class="content">
-
-<div class="progress">
-<div class="progress-bar" id="progress"></div>
-</div>
-
 <!-- LESSON 1 -->
 
 <div class="lesson" id="l1">
 
-<h2>Lesson 1 – What is HTML?</h2>
+<h2>HTML Basics – Lesson 1</h2>
 
-<p>HTML is used to build websites.</p>
+<h3>HTML কি?</h3>
+
+<p>
+HTML ৰ সম্পূৰ্ণ নাম হৈছে <b>Hyper Text Markup Language</b>।
+</p>
+
+<p>
+HTML হৈছে এটা ভাষা যাক ব্যৱহাৰ কৰি Website বনোৱা হয়।
+</p>
+
+<p>
+যেতিয়া তুমি Google, YouTube, বা অন্য কোনো Website খোলা,
+সেইবোৰ Website বেছিভাগ সময় HTML ব্যৱহাৰ কৰি বনোৱা হয়।
+</p>
+
+<p><b>👉 HTML = Website বনোৱাৰ ভিত্তি</b></p>
+
+<p>
+যেনে এটা ঘৰ বনাবলৈ প্ৰথমে ইট, বালি, চিমেণ্ট লাগে।
+তেনেই Website বনাবলৈ HTML লাগে।
+</p>
+
+<hr>
+
+<h3>Website কেনেকৈ বনোৱা হয়?</h3>
+
+<p>Website বনাবলৈ সাধাৰণতে ৩টা জিনিস লাগে —</p>
+
+<ul>
+<li><b>HTML</b> – Website ৰ গঠন বনাই</li>
+<li><b>CSS</b> – Website ধুনীয়া কৰে</li>
+<li><b>JavaScript</b> – Website চলন্ত (Interactive) কৰে</li>
+</ul>
+
+<hr>
+
+<h3>HTML ক'ত লিখা হয়?</h3>
+
+<p>HTML লিখিবলৈ তুমি এইবোৰ ব্যৱহাৰ কৰিব পাৰা —</p>
+
+<ul>
+<li>Notepad</li>
+<li>Notepad++</li>
+<li>VS Code</li>
+<li>Sublime Text</li>
+</ul>
+
+<p>
+সৰু ল'ৰা-ছোৱালীৰ বাবে <b>Notepad</b> দিয়াই আৰম্ভ কৰা ভাল।
+</p>
+
+<hr>
+
+<h3>HTML File কেনেকৈ বনাব?</h3>
+
+<p>Step by step —</p>
+
+<ol>
+<li>Computer ত Notepad খুলা</li>
+<li>HTML code লিখা</li>
+<li>File Save কৰা</li>
+<li>File name দিয়া</li>
+</ol>
 
 <div class="code">
 
-HTML = Structure<br>
-CSS = Design<br>
-JavaScript = Action
+index.html
 
 </div>
 
-</div>
+<p><b>গুৰুত্বপূর্ণ কথা</b></p>
 
-<!-- LESSON 2 -->
+<p>👉 File ৰ শেষত <b>.html</b> থাকিব লাগিব।</p>
 
-<div class="lesson" id="l2">
+<hr>
 
-<h2>Lesson 2 – Page Structure</h2>
+<h3>HTML Tag কি?</h3>
+
+<p>
+HTML ত আমি <b>Tag</b> ব্যৱহাৰ কৰো।
+</p>
+
+<p>
+Tag মানে হৈছে নির্দেশনা।
+</p>
+
+<p>
+Tag browser ক কয় —
+</p>
+
+<ul>
+<li>এইটো heading</li>
+<li>এইটো paragraph</li>
+</ul>
 
 <div class="code">
 
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&lt;body&gt;<br>
-Hello World<br>
-&lt;/body&gt;<br>
+&lt;tagname&gt; &lt;/tagname&gt;
+
+</div>
+
+Example
+
+<div class="code">
+
+&lt;p&gt;এইটো এটা paragraph&lt;/p&gt;
+
+</div>
+
+<p>
+&lt;p&gt; হৈছে start tag
+</p>
+
+<p>
+&lt;/p&gt; হৈছে end tag
+</p>
+
+<hr>
+
+<h3>HTML ৰ প্ৰথম Program</h3>
+
+<div class="code">
+
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+Hello World
+
+&lt;/body&gt;
+
 &lt;/html&gt;
 
 </div>
 
-</div>
+<hr>
 
-<!-- LESSON 3 -->
+<h3>Heading Example</h3>
 
-<div class="lesson" id="l3">
+<div class="code">
 
-<h2>Lesson 3 – Try HTML Live</h2>
+&lt;h1&gt;Big Heading&lt;/h1&gt;
 
-<p>Type HTML and see result:</p>
+&lt;h2&gt;Medium Heading&lt;/h2&gt;
 
-<textarea id="editor">
-
-<h1>Hello Kids</h1>
-<p>This is my first website</p>
-
-</textarea>
-
-<br><br>
-
-<button onclick="runCode()">▶ Run Code</button>
-
-<iframe id="output"></iframe>
+&lt;h3&gt;Small Heading&lt;/h3&gt;
 
 </div>
 
-<div class="nav-buttons">
+<hr>
 
-<button onclick="prevLesson()">⬅ Previous</button>
-<button onclick="nextLesson()">Next ➡</button>
+<h3>Paragraph Example</h3>
+
+<div class="code">
+
+&lt;p&gt;মই HTML শিকি আছো&lt;/p&gt;
 
 </div>
 
+<hr>
+
+<h3>Line Break</h3>
+
+<div class="code">
+
+&lt;p&gt;
+মোৰ নাম Rahul &lt;br&gt;
+মই HTML শিকো
+&lt;/p&gt;
+
 </div>
 
-<script>
+<hr>
 
-/* LIVE CODE */
+<h3>HTML Comment</h3>
 
-function runCode(){
+<div class="code">
 
-let code=document.getElementById("editor").value;
+&lt;!-- এইটো comment --&gt;
 
-document.getElementById("output").srcdoc=code;
+&lt;h1&gt;Hello&lt;/h1&gt;
 
-}
+</div>
 
-/* LESSON NAVIGATION */
+<hr>
 
-let lessons=["l1","l2","l3"];
-let current=0;
+<h3>Practice Example</h3>
 
-/* PROGRESS BAR */
+<div class="code">
 
-function updateProgress(){
+&lt;html&gt;
 
-let percent=((current+1)/lessons.length)*100;
+&lt;head&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
 
-document.getElementById("progress").style.width=percent+"%";
+&lt;body&gt;
 
-updateActive();
+&lt;h1&gt;Welcome&lt;/h1&gt;
 
-}
+&lt;p&gt;মোৰ প্ৰথম Website&lt;/p&gt;
 
-/* ACTIVE SIDEBAR */
+&lt;p&gt;মই HTML শিকি আছো&lt;/p&gt;
 
-function updateActive(){
+&lt;/body&gt;
 
-let links=document.querySelectorAll(".sidebar a");
+&lt;/html&gt;
 
-links.forEach((link,i)=>{
+</div>
 
-link.classList.remove("active");
+<hr>
 
-if(i===current+1){   // because dashboard is first link
+<h3>Student Practice</h3>
 
-link.classList.add("active");
+<ul>
 
-}
+<li>1️⃣ তোমাৰ নাম লিখা</li>
+<li>2️⃣ তোমাৰ school নাম লিখা</li>
+<li>3️⃣ এটা heading বনোৱা</li>
 
-});
+</ul>
 
-}
+Example
 
-/* NEXT LESSON */
+<div class="code">
 
-function nextLesson(){
+&lt;h1&gt;My Name&lt;/h1&gt;
+&lt;p&gt;Rahul&lt;/p&gt;
 
-if(current<lessons.length-1){
+&lt;h2&gt;My School&lt;/h2&gt;
+&lt;p&gt;ABC School&lt;/p&gt;
 
-current++;
+</div>
 
-location.hash=lessons[current];
+<hr>
 
-updateProgress();
+<h3>Lesson 1 Summary</h3>
 
-}
+<ul>
 
-}
+<li>✔ HTML কি</li>
+<li>✔ HTML file কেনেকৈ বনাব</li>
+<li>✔ HTML Tag কি</li>
+<li>✔ HTML program</li>
+<li>✔ Heading</li>
+<li>✔ Paragraph</li>
+<li>✔ Line break</li>
+<li>✔ Comment</li>
 
-/* PREVIOUS LESSON */
+</ul>
 
-function prevLesson(){
+<hr>
 
-if(current>0){
+<h3>Homework</h3>
 
-current--;
+<p>এইবোৰ লিখি এটা HTML file বনোৱা —</p>
 
-location.hash=lessons[current];
+<ul>
 
-updateProgress();
+<li>তোমাৰ নাম</li>
+<li>তোমাৰ school</li>
+<li>তোমাৰ favourite game</li>
 
-}
+</ul>
 
-}
-
-updateProgress();
-
-</script>
-
-</body>
-
-</html>
+</div>
