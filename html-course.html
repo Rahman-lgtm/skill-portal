@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kids HTML Learning Portal</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef2f7;
+margin:0;
+}
+
+/* Header */
+
+header{
+background:#3aa655;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Layout */
+
+.container{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:230px;
+background:#2c3e50;
+height:100vh;
+padding:15px;
+color:white;
+position:fixed;
+}
+
+.sidebar h3{
+text-align:center;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:10px;
+margin:5px 0;
+background:#34495e;
+border-radius:6px;
+}
+
+.sidebar a:hover{
+background:#1abc9c;
+}
+
+/* Content */
+
+.content{
+margin-left:250px;
+padding:30px;
+}
+
+/* Lesson box */
+
+.lesson{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:25px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Code box */
+
+.code{
+background:#272822;
+color:#f8f8f2;
+padding:15px;
+border-radius:8px;
+font-family:monospace;
+margin-top:10px;
+}
+
+/* Result */
+
+.result{
+background:#f4f4f4;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+}
+
+/* Graphics */
+
+.graphic{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.graphic div{
+flex:1;
+background:#dff0ff;
+padding:15px;
+text-align:center;
+border-radius:8px;
+}
+
+button{
+padding:10px 15px;
+background:#3aa655;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2e8b57;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🚀 Kids HTML Coding School</h1>
+<p>Learn HTML from Basic to Advanced</p>
+</header>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h3>Lessons</h3>
+
+<a href="#l1">Lesson 1 – What is HTML</a> <a href="#l2">Lesson 2 – Page Structure</a> <a href="#l3">Lesson 3 – Headings</a> <a href="#l4">Lesson 4 – Paragraph</a> <a href="#l5">Lesson 5 – Images</a> <a href="#l6">Lesson 6 – Links</a> <a href="#l7">Lesson 7 – Lists</a> <a href="#l8">Lesson 8 – Tables</a> <a href="#l9">Lesson 9 – Forms</a> <a href="#l10">Lesson 10 – Mini Project</a>
+
+</div>
+
+<div class="content">
+
+<!-- Lesson 1 -->
+
+<div class="lesson" id="l1">
+
+<h2>Lesson 1 – What is HTML?</h2>
+
+<p>
+HTML is used to build websites.
+</p>
+
+<div class="graphic">
+
+<div>🧱 HTML<br>Structure</div>
+<div>🎨 CSS<br>Design</div>
+<div>⚡ JavaScript<br>Action</div>
+
+</div>
+
+</div>
+
+<!-- Lesson 2 -->
+
+<div class="lesson" id="l2">
+
+<h2>Lesson 2 – Basic Structure</h2>
+
+<div class="code">
+
+<!DOCTYPE html><br>
+<html><br>
+<head><br>
+<title>My Page</title><br>
+</head><br>
+<body><br>
+Hello World<br>
+</body><br>
+</html>
+
+</div>
+
+<div class="result">
+Hello World
+</div>
+
+</div>
+
+<!-- Lesson 3 -->
+
+<div class="lesson" id="l3">
+
+<h2>Lesson 3 – Headings</h2>
+
+<div class="code">
+
+<h1>Big Title</h1><br>
+<h2>Medium Title</h2><br>
+<h3>Small Title</h3>
+
+</div>
+
+<div class="result">
+
+<h1>Big Title</h1>
+<h2>Medium Title</h2>
+<h3>Small Title</h3>
+
+</div>
+
+</div>
+
+<!-- Lesson 4 -->
+
+<div class="lesson" id="l4">
+
+<h2>Lesson 4 – Paragraph</h2>
+
+<div class="code">
+
+<p>This is a paragraph</p>
+
+</div>
+
+<div class="result">
+
+<p>This is a paragraph</p>
+
+</div>
+
+</div>
+
+<!-- Lesson 5 -->
+
+<div class="lesson" id="l5">
+
+<h2>Lesson 5 – Image</h2>
+
+<div class="code">
+
+<img src="https://via.placeholder.com/150">
+
+</div>
+
+<div class="result">
+
+<img src="https://via.placeholder.com/150">
+
+</div>
+
+</div>
+
+<!-- Lesson 6 -->
+
+<div class="lesson" id="l6">
+
+<h2>Lesson 6 – Links</h2>
+
+<div class="code">
+
+<a href="https://google.com"&gt;Open Google</a>
+
+</div>
+
+<div class="result">
+
+<a href="https://google.com">Open Google</a>
+
+</div>
+
+</div>
+
+<!-- Lesson 7 -->
+
+<div class="lesson" id="l7">
+
+<h2>Lesson 7 – Lists</h2>
+
+<div class="code">
+
+<ul><br>
+<li>HTML</li><br>
+<li>CSS</li><br>
+<li>JavaScript</li><br>
+</ul>
+
+</div>
+
+<div class="result">
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- Lesson 8 -->
+
+<div class="lesson" id="l8">
+
+<h2>Lesson 8 – Tables</h2>
+
+<div class="code">
+
+<table border="1"><br>
+<tr><br>
+<th>Name</th><br>
+<th>Age</th><br>
+</tr><br>
+<tr><br>
+<td>Rahul</td><br>
+<td>10</td><br>
+</tr><br>
+</table>
+
+</div>
+
+</div>
+
+<!-- Lesson 9 -->
+
+<div class="lesson" id="l9">
+
+<h2>Lesson 9 – Forms</h2>
+
+<div class="code">
+
+<input type="text" placeholder="Your Name">
+
+</div>
+
+<div class="result">
+
+<input type="text" placeholder="Your Name">
+
+</div>
+
+</div>
+
+<!-- Lesson 10 -->
+
+<div class="lesson" id="l10">
+
+<h2>Lesson 10 – Mini Project</h2>
+
+<p>Create your own webpage:</p>
+
+<ul>
+<li>Add heading</li>
+<li>Add image</li>
+<li>Add paragraph</li>
+<li>Add link</li>
+</ul>
+
+<button onclick="alert('Great Job! You finished HTML Course 🎉')">
+Finish Course
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
