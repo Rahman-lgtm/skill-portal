@@ -313,3 +313,77 @@ margin-top:10px;
 .recent li{
 margin:6px;
 }
+/* LESSON TEXT */
+
+.lesson h2{
+color:#2c3e50;
+margin-bottom:10px;
+}
+
+.lesson h3{
+color:#28a745;
+margin-top:25px;
+}
+
+.lesson p{
+line-height:1.7;
+font-size:16px;
+color:#333;
+}
+
+/* LIST STYLE */
+
+.lesson ul{
+margin-left:20px;
+margin-top:10px;
+}
+
+.lesson li{
+margin-bottom:6px;
+}
+
+/* ORDERED LIST */
+
+.lesson ol{
+margin-left:20px;
+}
+
+/* CODE BLOCK */
+
+.code{
+background:#1e1e1e;
+color:#00ff90;
+padding:15px;
+border-radius:6px;
+font-family:monospace;
+margin-top:10px;
+white-space:pre-line;
+}
+
+/* PRACTICE / HOMEWORK BOX */
+
+.lesson hr{
+margin:25px 0;
+border:none;
+border-top:2px dashed #ddd;
+}
+
+/* STUDENT PRACTICE */
+
+.lesson ul li::marker{
+color:#28a745;
+}
+
+/* HOMEWORK BOX */
+
+.lesson ul{
+background:#f8fbff;
+padding:15px;
+border-radius:6px;
+}
+
+/* CODE EXAMPLE TITLE */
+
+.lesson b{
+color:#000;
+}
