@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:Georgia;
+font-family:Bookman old style;
 background:#d9d9d9;
 }
 
@@ -101,7 +101,7 @@ margin-bottom:20px;
 .course-box{
 display:flex;
 gap:20px;
-margin-bottom:20px;
+margin-bottom:50px;
 flex-wrap:wrap;
 }
 
@@ -111,7 +111,7 @@ padding:15px;
 border-radius:8px;
 box-shadow:2px 2px 5px gray;
 font-weight:bold;
-width:200px;
+width:150px;
 }
 
 /* Why box */
