@@ -4,13 +4,19 @@ font-family:Georgia;
 background:#d9d9d9;
 }
 
-/* Header */
+/* Header (Fixed Top) */
 
 header{
 text-align:center;
 padding:10px;
 border-bottom:2px solid black;
 background:#f2f2f2;
+
+position:fixed;
+top:0;
+left:200px;
+right:0;
+z-index:1000;
 }
 
 header h1{
@@ -70,11 +76,12 @@ background:#f5d36c;
 color:#000;
 }
 
-/* Content */
+/* Main Content */
 
 .content{
 margin-left:220px;
 padding:20px;
+margin-top:90px;
 flex:1;
 }
 
@@ -139,12 +146,12 @@ box-shadow:2px 2px 5px gray;
 /* Footer */
 
 footer{
-margin-top:20px;
+margin-left:220px;
+margin-top:40px;
 border-top:2px solid black;
 padding:10px;
 text-align:center;
 font-size:14px;
-margin-left:220px;
 background:#f2f2f2;
 }
 
@@ -155,9 +162,9 @@ background:#e9dcb8;
 border:2px solid green;
 text-align:center;
 padding:15px;
-margin:10px;
-border-radius:8px;
 margin-left:220px;
+margin-top:100px;
+border-radius:8px;
 }
 
 .course-intro{
@@ -241,6 +248,9 @@ border-radius:10px;
 font-size:16px;
 cursor:pointer;
 }
+
+/* Dashboard */
+
 .dashboard-cards{
 display:flex;
 gap:20px;
